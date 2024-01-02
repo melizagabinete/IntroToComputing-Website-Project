@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page With Light/Dark Mode</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="logo11.png" alt="Logo"/>
+              <h3>FundoPal</h3>
+            </div>
+            <div class="links">
+              <nav>
+                <div class="navigation">
+                  <img src="logo1.png" alt="" class="logo-img">
+                  <ul>
+                    <li class="home-link"><a href="index.html">Home</a></li>
+                  </ul>
+                  <div class="mode-toggle">
+                    <button class="toggle-btn">
+                      <i class="far fa-moon"></i>
+                      <i class="far fa-sun"></i>
+                    </button>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="overlay"></div>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+        <div class="calculators">
+          <div class="reco-expense-wrapper">
+            <div class="container1">
+              <div class="box">
+                <h1>Budget Sync Calculator</h1>
+                <div class="content">
+                  <div class="input">
+                    <label for="allowance1">Allowance(Weekly)</label>
+                    <input type="number" id="allowance1">
+                  </div>
+                  <div class="input">
+                    <label for="expense1">Estimated Weekly Expense</label>
+                    <input type="number" id="expense1">
+                  </div>
+                  <button id="calculate1">Calculate</button>
+                </div>
+                <div class="result">
+                  <p>The recommended daily spending is...</p>
+                  <div id="result">00.00</div>
+                  <p class="comment1"></p>
+                  <span id="try-again1" style="display: none;">Try again</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wantexpense-calculator-wrapper">
+            <div class="container1">
+              <div class="box">
+                <h1>Expense Limit Calculator</h1>
+                <div class="content">
+                  <div class="input">
+                    <label for="allowance2">Allowance(Weekly)</label>
+                    <input type="number" id="allowance2">
+                  </div>
+                  <div class="input">
+                    <label for="expense2">Estimated Daily Expense</label>
+                    <input type="number" id="expense2">
+                  </div>
+                  <div class="input">
+                    <label for="wantexpense2">Amount to spend</label>
+                    <input type="number" id="wantexpense2">
+                  </div>
+                  <button id="calculate2">Calculate</button>
+                </div>
+                <div class="result2">
+                  <div id="result2"></div>
+                  <p class="comment2">
+                    <div id="comment2"></div>
+                    <span id="try-again2" style="display: none;">Try again</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
